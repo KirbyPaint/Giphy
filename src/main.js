@@ -7,13 +7,13 @@ function clearFields() {
   $("#results0").empty();
   $("#result").empty();
   $("#randomresult").empty();
+  $("#giphy").val("");
 }
 
 $(document).ready(function () {
 
   $("#findgiphy").click(function () {
     const search = $("#giphy").val();
-    $("#findgiphy").val("");
 
     let promise = new Promise(function (resolve, reject) {
       let request = new XMLHttpRequest();
